@@ -1,6 +1,6 @@
 var express = require('express');
 var redis = require('redis');
-var client = redis.createClient(4000, "172.17.0.3");
+var client = redis.createClient("redis://storage:4000");
 var router = express.Router();
 
 /* GET users listing. */
