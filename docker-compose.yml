@@ -1,2 +1,8 @@
 version: '1'
-image: russojrv/ulcorp:nodejsmessages
+
+services:
+  nodejsmessages:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
