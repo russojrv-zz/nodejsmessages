@@ -1,6 +1,6 @@
 var express = require('express');
 var redis = require('redis');
-var client = redis.createClient("redis://localhost:6379");
+var client = redis.createClient(6379, 'redis');
 var router = express.Router();
 
 /* GET users listing. */
